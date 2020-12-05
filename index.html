@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCIRh6CjRevsX_ldLbp1QA5zw4PZszBYK8",
+        authDomain: "canvas-ca450.firebaseapp.com",
+        databaseURL: "https://canvas-ca450.firebaseio.com",
+        projectId: "canvas-ca450",
+        storageBucket: "canvas-ca450.appspot.com",
+        messagingSenderId: "30564560321",
+        appId: "1:30564560321:web:271802e5b4adc413ab1340"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+      <div id ="canvascontainer"></div>
+
+  <p>
+    <button id="saveButton">Save</button>
+    <button id="clearButton">Clear</button>
+  </p>
+
+  <p>
+    <ol id="drawinglist">
+
+    </ol>
+
+</body></html>
